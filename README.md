@@ -1,114 +1,122 @@
-Linux Administration Labs
+# Linux Administration Labs
 
-A hands-on learning repository documenting my journey through Linux system administration, command-line tools, shell scripting, networking, and server management.
+A practical, continuously maintained portfolio of Linux administration labs and projects. This repository documents my learning through **university coursework** and, in parallel, the **Linux (LPIC-1) course by Quera College**, taught by **Jadi Mirmirani**.
 
-About
+The focus is on applying Linux concepts in a real Ubuntu environment, understanding system behaviour, troubleshooting issues, automating repetitive tasks, and preparing to operate and deploy software on Linux servers.
 
-This repository accompanies my learning journey through the Linux (LPIC-1) course by Quera College, taught by "Jadi Mirmirani" (https://quera.org/college/landpage/25249/linux-lpic1-free).
+> **Learning context:** University coursework and the Quera LPIC-1 course are two parallel learning sources. The labs and projects here are my own practical exercises and documentation; they are not presented as official university or Quera assignments. This repository does not claim an LPIC-1 certification.
 
-The goal is to build practical Linux skills through hands-on exercises, command-line experiments, troubleshooting scenarios, and independent projects.
+## Learning roadmap
 
-Rather than collecting commands and theoretical notes, I aim to understand how Linux systems work and apply that knowledge to real-world software development and server administration tasks.
+This roadmap combines Linux fundamentals, LPIC-1-aligned topics, and practical skills commonly used in Linux administration, backend operations, and junior DevOps roles. Statuses describe work published in this repository, not course completion or certification progress.
 
-Learning Objectives
+| # | Topic | Key skills and tools | Status |
+|---|---|---|---|
+| 01 | Linux System Overview | Architecture, kernel, shell, user space, boot process, system information | In Progress |
+| 02 | Command Line & GNU Utilities | Navigation, file operations, text processing, pipes, redirection, grep, find, man | Planned |
+| 03 | Filesystems & Permissions | FHS, paths, links, ownership, chmod, chown, umask, mounts | Planned |
+| 04 | Users, Groups & Access Control | Account management, sudo, account files, least privilege | Planned |
+| 05 | Processes & Job Control | Process states, signals, jobs, priorities, ps, top, kill | Planned |
+| 06 | Package Management | APT, repositories, installation, updates, package troubleshooting | Planned |
+| 07 | Bash & Shell Automation | Variables, quoting, conditions, loops, functions, exit codes, robust scripts | Planned |
+| 08 | Storage, Backup & Scheduling | Disks, partitions, filesystems, tar, gzip, cron, restore procedures | Planned |
+| 09 | Services, systemd & Logs | systemctl, service units, journalctl, log inspection, troubleshooting | Planned |
+| 10 | Linux Networking | IP addressing, routes, DNS, ports, sockets, connectivity diagnostics | Planned |
+| 11 | SSH & Linux Security | SSH keys, secure remote access, firewall basics, updates, hardening | Planned |
+| 12 | Monitoring & Troubleshooting | CPU, memory, disk, processes, logs, resource diagnosis, incident investigation | Planned |
 
-- Understand Linux system architecture and the boot process.
-- Work confidently with the Linux command line and GNU utilities.
-- Manage filesystems, users, groups, and file permissions.
-- Understand and manage processes and system services.
-- Write and automate tasks using Bash scripting.
-- Work with package management and system administration tools.
-- Understand networking fundamentals and troubleshoot connectivity.
-- Explore Linux security, SSH, and system access management.
-- Apply Linux knowledge to real-world software deployment and server management.
+### Practical projects
 
-Learning Labs
+| Project | What it demonstrates | Status |
+|---|---|---|
+| [01 — Automated Backup System](projects/01-automated-backup/README.md) | Bash automation, archives, retention, cron, logging, validation and restore | Planned |
+| [02 — Linux System Monitor](projects/02-linux-system-monitor/README.md) | Resource inspection, process/service checks, thresholds, reports and logs | Planned |
+| [03 — Node.js Application Deployment](projects/03-nodejs-linux-deployment/README.md) | Linux setup, SSH, Node.js, systemd, Nginx, deployment and troubleshooting | Planned |
 
-Practical exercises and technical notes organized around the main topics covered in the course.
+## Repository structure
 
-#| Topic| Status
-01| System Architecture| In Progress
-02| Linux Installation & Package Management| Planned
-03| GNU/Linux Commands| Planned
-04| Filesystems & Permissions| Planned
-05| Shell & Bash Scripting| Planned
-06| System Administration| Planned
-07| Services & System Logs| Planned
-08| Networking| Planned
-09| Linux Security| Planned
+```text
+linux-admin-labs-lpic/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── labs/
+│   ├── 01-linux-system-overview/
+│   ├── 02-command-line-and-gnu-utilities/
+│   ├── 03-filesystems-and-permissions/
+│   ├── 04-users-and-groups/
+│   ├── 05-processes-and-job-control/
+│   ├── 06-package-management/
+│   ├── 07-bash-and-shell-scripting/
+│   ├── 08-storage-backup-and-scheduling/
+│   ├── 09-services-systemd-and-logs/
+│   ├── 10-linux-networking/
+│   ├── 11-ssh-and-linux-security/
+│   └── 12-monitoring-and-troubleshooting/
+├── projects/
+│   ├── 01-automated-backup/
+│   ├── 02-linux-system-monitor/
+│   └── 03-nodejs-linux-deployment/
+└── resources/
+    └── references.md
+```
 
-Each lab will include relevant commands, practical examples, configuration exercises, and troubleshooting notes where applicable.
+Each lab and project has its own README so exercises, evidence, troubleshooting notes, and improvements can be added incrementally. Implementation files will be added when the relevant work is actually completed.
 
-Practical Projects
+## Lab documentation standard
 
-The following projects are planned as practical applications of the concepts covered throughout this learning journey.
+Each lab should record:
 
-1. Automated Backup Script
+- **Objective:** what the exercise demonstrates.
+- **Environment:** distribution, version, kernel, shell, and relevant tools.
+- **Concepts covered:** the Linux concepts behind the task.
+- **Practical exercises:** commands and tasks performed.
+- **Evidence and output:** real, sanitized command output or test results.
+- **Troubleshooting:** errors, diagnosis, and resolution.
+- **Safety and cleanup:** risks of privileged/destructive commands and how changes are reverted.
+- **What I learned:** concise takeaways and remaining questions.
+- **References:** official documentation and course material.
 
-Goal: Develop a Bash-based backup solution for automating file and directory backups.
+Commands will not be listed as completed exercises until they have been run and verified.
 
-Planned features:
+## Environment
 
-- Automated directory backups.
-- Timestamp-based backup naming.
-- File compression and archiving.
-- Backup retention and cleanup.
-- Scheduled execution using Cron.
-- Logging and error handling.
+- Primary practice environment: **Ubuntu Linux (native installation)**.
+- Main administration and automation shell: **Bash**.
+- Version control: **Git**.
+- Exact Ubuntu and kernel versions will be recorded after checking the practice machine.
 
-Technologies: Bash, Cron, tar, gzip, Linux File System.
+## Learning approach
 
-Status: Planned
+1. Study concepts through university coursework and the Quera LPIC-1 course.
+2. Reproduce them in the Ubuntu environment.
+3. Explain commands and inspect actual output.
+4. Investigate errors instead of hiding them.
+5. Add focused changes to the relevant lab or project.
+6. Validate scripts/configurations before documenting them as working.
+7. Commit each meaningful step with a descriptive message.
 
-2. Linux Server Monitoring
+Suggested commit messages:
 
-Goal: Build a lightweight monitoring script to inspect essential Linux system resources and report their current status.
+- `docs: add Linux system overview lab`
+- `feat: implement automated backup script`
+- `fix: handle missing backup source directory`
+- `test: add backup script validation scenarios`
+- `docs: document backup restoration process`
 
-Planned features:
+## Learning references
 
-- CPU and memory usage monitoring.
-- Disk space and filesystem checks.
-- Process monitoring.
-- Service status checks.
-- System resource reports.
-- Basic logging and alert conditions.
+- **Quera College:** [Linux (LPIC-1) — Free Course](https://quera.org/college/landpage/25249/linux-lpic1-free)
+- **Instructor:** Jadi Mirmirani
+- **University coursework:** Linux and related systems topics studied as part of university learning. Specific course references can be added when documented.
+- **LPIC-1 objectives:** [Linux Professional Institute](https://www.lpi.org/our-certifications/lpic-1-overview/)
 
-Technologies: Bash, Linux System Utilities, systemd, journalctl.
+Third-party course materials remain the property of their respective owners. The MIT license applies to original repository content and code, not third-party materials.
 
-Status: Planned
+## Current focus
 
-3. Node.js Application Deployment on Linux
-
-Goal: Deploy and run a Node.js application in a Linux server environment, applying Linux administration and deployment concepts.
-
-Planned features:
-
-- Linux server preparation.
-- Node.js installation and environment configuration.
-- Application deployment.
-- Process and service management using systemd.
-- Reverse proxy configuration with Nginx.
-- SSH-based remote server management.
-- Application logs and basic troubleshooting.
-
-Technologies: Linux, Node.js, SSH, systemd, Nginx.
-
-Status: Planned
-
-Learning Approach
-
-This repository is continuously updated as I progress through the course and complete practical exercises.
-
-The labs and projects are independently documented and implemented for learning purposes. They are not official Quera course assignments or LPIC-1 certification results.
-
-Course Reference
-
-- Course: "Linux (LPIC-1) – Quera College" (https://quera.org/college/landpage/25249/linux-lpic1-free)
-- Instructor: Jadi Mirmirani
-- Platform: Quera College
-- Course Format: Free video-based educational course
-- Certification: This repository does not represent an LPIC-1 certification.
+The immediate focus is **Lab 01 — Linux System Overview** on native Ubuntu. Environment details, commands, outputs, and findings will be added after they have been run and verified.
 
 ---
 
-Learning by doing, experimenting, and documenting.
+Learning by doing, testing, troubleshooting, and documenting.
