@@ -1,0 +1,36 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Logs and runtime output
+*.log
+logs/
+*.pid
+
+# Generated archives and backups
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+backups/
+*.dump
+
+# Temporary files and OS metadata
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Test output
+coverage/
